@@ -1,0 +1,6 @@
+---
+- name: Install Dev packages
+  kewlfft.aur.aur:
+    name: "{{ dev_packages }}"
+    state: present
+  changed_when: false

@@ -1,0 +1,10 @@
+---
+- name: Clone Ld-Hagen/fix-opera-linux-ffmpeg-widevine
+  ansible.builtin.git:
+    repo: 'https://github.com/Ld-Hagen/fix-opera-linux-ffmpeg-widevine'
+    dest: /tmp/fix-opera-linux-ffmpeg-widevine
+
+- name: Install Opera Fix
+  become: yes
+  shell: printf 'y\ny\ny\n2\ny\n' | /tmp/fix-opera-linux-ffmpeg-widevine/install.sh
+

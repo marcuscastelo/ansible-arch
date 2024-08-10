@@ -1,0 +1,21 @@
+---
+- name: Configure host.
+  hosts: all
+
+  vars_files:
+    - default.config.yml
+    - config.yml
+
+  tasks:
+    # - import_tasks: tasks/5-mount-backup-volume.yml
+    # - import_tasks: tasks/10-copy-backup-root-folder.yml
+    # - import_tasks: tasks/20-copy-backup-home-folder.yml
+    # - import_tasks: tasks/100-update.yml
+    # - import_tasks: tasks/101-base-packages.yml
+    # - import_tasks: tasks/102-aur.yml
+    # - import_tasks: tasks/103-fonts.yml
+    # - import_tasks: tasks/104-dev-packages.yml
+    # - import_tasks: tasks/105-other-packages.yml
+    # - import_tasks: tasks/199-upgrade.yml
+    # - import_tasks: tasks/210-change-to-zsh.yml
+    - import_tasks: tasks/370-setup-opera-widevine.yml

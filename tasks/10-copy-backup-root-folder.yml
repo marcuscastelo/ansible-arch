@@ -1,0 +1,6 @@
+---
+- name: Copy root backup
+  become: true
+  copy:
+    src: /mnt/backup/@/
+    dest: /

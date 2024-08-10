@@ -1,0 +1,131 @@
+---
+update: true
+backup_volume_name: Backup_SSD
+
+base_packages:
+  - base
+  - base-devel
+  - linux
+  # - linux-firmware
+  - sudo
+  # - dhcpcd
+  # - netctl
+  # - networkmanager
+  # - openssh
+  # - nano
+  # - pipewire
+  - man-db
+  - man-pages
+  - git
+  - wget
+  # - reflector
+
+font_packages:
+  - ttf-ubuntu-font-family
+  - noto-fonts
+  - noto-fonts-emoji # for emoji
+  - ttf-dejavu
+  - ttf-roboto
+  - adobe-source-han-sans-otc-fonts # for CJK
+  - ttf-fira-code
+  - ttf-droid
+  - ttf-inconsolata
+  - ttf-liberation
+  - ttf-roboto-mono
+
+dev_packages:
+  - visual-studio-code-bin
+  - sublime-text-4
+  - pyenv
+  - python
+  - python-pip
+  - nodejs
+  - npm
+  - pnpm
+  - yarn
+  - rust
+  - jdk
+  - go
+  - vsce
+  - geckodriver
+  # Terminal, not really dev
+  - alacritty
+  - zsh
+  - neovim
+  - btop
+  - bottom
+  - curl
+  - jq
+  - unzip
+  - unrar
+  - python-thefuck
+  - ripgrep
+  - lazygit
+  - yakuake
+  - inxi
+  - scrcpy
+  - screenkey
+  - nvm
+  - xorg-xkill
+
+other_packages:
+  # - linux-headers
+  - bash-completion
+  - mpv
+  # - mpv-mpris
+  # - aria2
+  - yay
+  # - pass
+  # - stow
+  - firefox
+  - google-chrome
+  - brave-bin
+  # - obsidian
+  - spotify
+  - spotify-adblock-git
+  - alacritty
+  # - yt-dlp
+  - ntfs-3g
+  # - gallery-dl
+  # - neofetch
+  # - btop
+  # - geary
+  # - browserpass-firefox
+  # - browserpass-chromium
+  # - tmux
+  # - cpupower
+  # - turbostat
+  # - acpi
+  # - bc
+  # - update-grub
+  # - p7zip
+  # - radeontop
+  # - xclip
+  - obs-studio
+  - barrier
+  - firefox
+  - opera
+  - discord
+  - telegram-desktop
+  - flameshot
+  - fcitx5
+  - fcitx5-material-color
+  - fcitx5-mozc
+  - fcitx5-configtool
+  - fcitx5-qt
+  - fcitx5-gtk
+  - xorg-xrandr
+  - mplayer
+  - partitionmanager
+  - dosfstools
+  - helvum
+  - fuse2
+  - notion-calendar-electron
+  - net-tools
+  - openvpn
+  - networkmanager-openvpn
+  - qbittorrent
+  - skanlite
+  - btrfs-progs
+  - refind
+  - arch-install-scripts

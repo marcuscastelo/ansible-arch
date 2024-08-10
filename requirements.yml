@@ -1,0 +1,5 @@
+---
+collections:
+  - community.general
+  - kewlfft.aur # For AUR
+  - ansible.posix # For mount

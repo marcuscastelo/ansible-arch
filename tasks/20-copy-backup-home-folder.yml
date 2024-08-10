@@ -1,0 +1,25 @@
+---
+- name: Copy home backup
+  become: true
+  shell: 'cp -r /mnt/backup/@home/marucs//. /home/marucs/'
+  args:
+    creates: /home/marucs/.aliases
+
+- name: Own home
+  become: true
+  shell: 'chown marucs:marucs -R /home/marucs && touch /home/marucs/.ansible-marucs-owned'
+  args:
+    creates: /home/marucs/.ansible-marucs-owned
+
+- name: Remove SingletonLock from Browsers
+  become: true
+  shell: find /home/marucs -name SingletonLock -exec rm {} +
+  changed_when: false
+
+- name: Delete cache
+  become: true
+  shell: rm -r /home/marucs/.cache
+
+- name: Delete kwallet
+  become: true
+  shell: rm -r /home/marucs/.local/share/kwalletd
